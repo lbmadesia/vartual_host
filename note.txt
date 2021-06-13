@@ -1,0 +1,30 @@
+step 1. //open (hosts) file 
+
+ C:\Windows\System32\drivers\etc\hosts
+
+ step 2. paste custome domain name
+
+ 127.0.0.2       careyo.in
+ 127.0.0.3       lbsettech.com
+
+
+ step 3.   paste below code
+
+        <VirtualHost 127.0.0.2:80>
+            DocumentRoot "C:/xampp/htdocs/careyo/public"
+            ServerName careyo.in
+           
+        </VirtualHost>
+
+        <VirtualHost 127.0.0.3:80>
+            DocumentRoot "C:/xampp/htdocs/lbsettech"
+            ServerName lbsettech.com
+            <Directory "C:/xampp/htdocs/lbsettech">
+                Options All
+                AllowOverride All
+                Order Allow,Deny
+                Allow from all
+                Require all granted
+            </Directory>
+        </VirtualHost>
+
