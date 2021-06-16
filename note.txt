@@ -1,6 +1,6 @@
 step 1. //open (hosts) file 
 
- C:\Windows\System32\drivers\etc\hosts
+ // C:\Windows\System32\drivers\etc\hosts
 
  step 2. paste custome domain name
 
@@ -8,7 +8,9 @@ step 1. //open (hosts) file
  127.0.0.3       lbsettech.com
 
 
- step 3.   paste below code
+ step 3.   paste below code in httpd-vhosts file
+ 
+// C:\xampp\apache\conf\original\extra\httpd-vhosts
 
         <VirtualHost 127.0.0.2:80>
             DocumentRoot "C:/xampp/htdocs/careyo/public"
