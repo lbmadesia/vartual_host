@@ -10,7 +10,7 @@ step 1. //open (hosts) file
 
  step 3.   paste below code in httpd-vhosts file
  
-// C:\xampp\apache\conf\original\extra\httpd-vhosts
+// C:\xampp\apache\conf\extra\httpd-vhosts
 
         <VirtualHost 127.0.0.2:80>
             DocumentRoot "C:/xampp/htdocs/careyo/public"
